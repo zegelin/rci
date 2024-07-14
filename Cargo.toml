@@ -1,0 +1,31 @@
+[package]
+name = "certinstaller"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+#async-ssh2-tokio = "0.8.7"
+async-trait = "0.1.80"
+clap = { version = "4.5.1", features = ["derive"] }
+figment = { version = "0.10.19", features = ["test", "toml", "env"] }
+hyper = { version = "1.4.0", features = ["client", "http1"] }
+pem-rfc7468 = { version = "0.7.0", features = ["std"] }
+#mime_guess = "2.0.4"
+#regex = "1.10.3"
+reqwest = { version = "0.11.24", features = ["cookies", "json", "multipart", "blocking"] }
+russh = "0.43.0"
+russh-keys = "0.43.0"
+rustls-pemfile = "2.1.2"
+rustls-pki-types = "1.7.0"
+rustls-webpki = "0.102.5"
+#rustls-pemfile = "2.1.2"
+serde = "1.0.197"
+tokio = { version = "1.36.0", features = ["io-std"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["fmt"] }
+url = { version = "2.5.0", features = ["serde"] }
+vec1 = "1.12.1"
+x509-cert = { version = "0.2.5", features = ["pem"] }
